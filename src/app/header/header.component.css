@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.leftCorner,
+.rightCorner {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.site-name {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1b82be;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.site-name:hover {
+  color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .leftCorner,
+  .rightCorner {
+    margin: 5px 0;
+  }
+
+  .site-name {
+    margin: 10px 0;
+  }
+}

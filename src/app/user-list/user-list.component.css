@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%; /* Ensure it uses full width */
+  max-width: 1024px; /* Add a max width for larger screens */
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    width: 50%; /* Width for larger screens */
+  }
+}
+
+/* Utility classes for better maintenance */
+.hidden {
+  display: none !important;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"][placeholder="Search by name, last name, or email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"][placeholder="Search by name, last name, or email"]:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"][placeholder="Search by name, last name, or email"]::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.search-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  table-layout: fixed; /* Prevents the table from overflowing */
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  word-wrap: break-word; /* Allows text to wrap within table cells */
+}
+
+table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.posts-button,
+.todos-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin: 2px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.posts-button:hover,
+.todos-button:hover {
+  background-color: #1b82be;
+}
+
+.posts-button:focus,
+.todos-button:focus {
+  outline: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px;
+  }
+
+  table {
+    font-size: 16px;
+  }
+
+  table th,
+  table td {
+    padding: 10px;
+  }
+
+  .search-container {
+    padding: 8px;
+  }
+
+  .posts-button,
+  .todos-button {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 5px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  table th,
+  table td {
+    padding: 8px;
+  }
+
+  .search-container {
+    padding: 6px;
+  }
+
+  .posts-button,
+  .todos-button {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto; /* Ensure footer stays at the bottom */
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #777;
+  padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-section {
+    margin-bottom: 0;
+  }
+}

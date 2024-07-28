@@ -1,0 +1,25 @@
+<input type="text" [(ngModel)]="searchTerm" (input)="search()" placeholder="Search by name, last name, or email">
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Company</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of filteredUsers">
+      <td>{{ user.name }} {{ user.surname }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.phone }}</td>
+      <td>{{ user.company_name }}</td>
+      <td>
+        <button [routerLink]="['/user-posts', user.email.split('@')[0]]" class="posts-button">Posts</button>
+        <button [routerLink]="['/user-todos', user.email.split('@')[0]]" class="todos-button">Todos</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

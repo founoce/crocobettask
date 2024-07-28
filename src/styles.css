@@ -1,0 +1,21 @@
+/* Main content */
+.main-content {
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    width: 50%;
+  }
+  * {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main-content {
+    width: 80%;
+  }
+}

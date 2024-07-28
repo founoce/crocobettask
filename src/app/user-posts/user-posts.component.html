@@ -1,0 +1,19 @@
+<div *ngIf="userPosts && userPosts.length > 0" class="posts-container">
+  <h2>Posts by {{ username }}</h2>
+  <ul>
+    <li *ngFor="let post of userPosts">
+      {{ post.post_title }}
+      <button (click)="showDetails(post)" class="detail-button">Detail</button>
+    </li>
+  </ul>
+</div>
+<div *ngIf="userPosts && userPosts.length === 0" class="posts-container">
+  <p>No posts available for this user.</p>
+</div>
+
+<div *ngIf="selectedPost" class="modal">
+  <div class="modal-content">
+    <span class="close" (click)="closeDetails()">&times;</span>
+    <p>{{ selectedPost.description }}</p>
+  </div>
+</div>

@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "name": "John",
+      "surname": "Doe",
+      "phone": "123-456-7890",
+      "email": "john.doe@example.com",
+      "company_name": "Doe Enterprises"
+    },
+    {
+      "name": "Jane",
+      "surname": "Smith",
+      "phone": "234-567-8901",
+      "email": "jane.smith@example.com",
+      "company_name": "Smith Co."
+    },
+    {
+      "name": "Alice",
+      "surname": "Johnson",
+      "phone": "345-678-9012",
+      "email": "alice.johnson@example.com",
+      "company_name": "Johnson & Johnson"
+    },
+    {
+      "name": "Bob",
+      "surname": "Brown",
+      "phone": "456-789-0123",
+      "email": "bob.brown@example.com",
+      "company_name": "Brown Industries"
+    }
+  ],
+  "posts": [
+    {
+      "username": "john.doe",
+      "post_title": "Hello World!",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "username": "jane.smith",
+      "post_title": "My First Post",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "username": "alice.johnson",
+      "post_title": "A Day in the Life",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "username": "bob.brown",
+      "post_title": "Tech Innovations",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    }
+  ],
+
+  "todos": [
+    {
+      "username": "john.doe",
+      "title": "Complete project proposal ...",
+      "completed": false
+    },
+    {
+      "username": "john.doe",
+      "title": "Buy groceries",
+      "completed": true
+    },
+    {
+      "username": "jane.smith",
+      "title": "Schedule dentist appointment",
+      "completed": false
+    },
+    {
+      "username": "jane.smith",
+      "title": "Submit expense report",
+      "completed": true
+    },
+    {
+      "username": "bob.brown",
+      "title": "Prepare presentation slides",
+      "completed": false
+    },
+    {
+      "username": "bob.brown",
+      "title": "Call client for feedback",
+      "completed": true
+    },
+    {
+      "username": "alice.johnson",
+      "title": "Review code changes",
+      "completed": false
+    },
+    {
+      "username": "alice.johnson",
+      "title": "Update team documentation",
+      "completed": true
+    }
+  ]
+}
